@@ -1,8 +1,8 @@
-![Status](https://github.com/icaoberg/singularity-aws-cli/actions/workflows/main.yml/badge.svg)
-![Issue](https://img.shields.io/github/issues/icaoberg/singularity-aws-cli)
-![forks](https://img.shields.io/github/forks/icaoberg/singularity-aws-cli)
-![Stars](https://img.shields.io/github/stars/icaoberg/singularity-aws-cli)
-![License](https://img.shields.io/github/license/icaoberg/singularity-aws-cli)
+![Status](https://github.com/pscedu/singularity-aws-cli/actions/workflows/main.yml/badge.svg)
+![Issue](https://img.shields.io/github/issues/pscedu/singularity-aws-cli)
+![forks](https://img.shields.io/github/forks/pscedu/singularity-aws-cli)
+![Stars](https://img.shields.io/github/stars/pscedu/singularity-aws-cli)
+![License](https://img.shields.io/github/license/pscedu/singularity-aws-cli)
 
 # singularity-aws-cli
 Singularity recipe for [aws-cli](https://aws.amazon.com/cli/).
