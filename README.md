@@ -1,0 +1,45 @@
+![Status](https://github.com/icaoberg/singularity-aws-cli/actions/workflows/main.yml/badge.svg)
+![Issue](https://img.shields.io/github/issues/icaoberg/singularity-aws-cli)
+![forks](https://img.shields.io/github/forks/icaoberg/singularity-aws-cli)
+![Stars](https://img.shields.io/github/stars/icaoberg/singularity-aws-cli)
+![License](https://img.shields.io/github/license/icaoberg/singularity-aws-cli)
+
+# singularity-aws-cli
+Singularity recipe for [aws-cli](https://aws.amazon.com/cli/).
+
+## Installing the container on Bridges 2
+Copy the
+
+* `SIF` file
+* and the `aws` and `aws_completer` script
+
+to `/opt/packages/aws-cli/4.8.25`.
+
+Copy the file `modulefile.lua` to `/opt/modulefiles/aws-cli` as `4.8.25.lua`.
+
+## Building the image using the recipe
+### To build the image locally
+Run the script `build.sh` to build image locally.
+
+```
+bash ./build.sh
+```
+
+### To build the image remotely
+Run the script `rbuild.sh` to build image remotely.
+
+```
+bash ./rbuild.sh
+```
+
+## To run tests
+To run the available tests, run the command
+
+```
+bash ./test.sh
+```
+
+---
+Copyright © 2020-2021 Pittsburgh Supercomputing Center. All Rights Reserved.
+
+The [Biomedical Applications Group](https://www.psc.edu/biomedical-applications/) at the [Pittsburgh Supercomputing Center](http://www.psc.edu) in the [Mellon College of Science](https://www.cmu.edu/mcs/) at [Carnegie Mellon University](http://www.cmu.edu).
