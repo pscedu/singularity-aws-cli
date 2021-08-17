@@ -1,4 +1,5 @@
 ![Status](https://github.com/pscedu/singularity-aws-cli/actions/workflows/main.yml/badge.svg)
+![Status](https://github.com/pscedu/singularity-aws-cli/actions/workflows/pretty.yml/badge.svg)
 ![Issue](https://img.shields.io/github/issues/pscedu/singularity-aws-cli)
 ![forks](https://img.shields.io/github/forks/pscedu/singularity-aws-cli)
 ![Stars](https://img.shields.io/github/stars/pscedu/singularity-aws-cli)
