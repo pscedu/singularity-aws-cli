@@ -5,14 +5,15 @@ PACKAGE=aws-cli
 TOOL=aws
 DIRECTORY=$(dirname $0)
 
-PERSISTENT_FILE_STORAGE=/ocean
-if [ -d $PERSISTENT_FILE_STORAGE ]; then
-	OPTIONS="-B $PERSISTENT_FILE_STORAGE"
-fi
+STORAGES=(/ocean /bil /hive /local)
 
-if [ -d /local ]; then
-	OPTIONS=$OPTIONS" -B /local"
-fi
+OPTIONS=""
+for STORAGE in "${STORAGES[@]}"
+do
+	if [ -d "$STORAGE" ]; then
+		OPTIONS=$OPTIONS" -B $STORAGE"
+	fi
+done
 
 singularity exec $OPTIONS $DIRECTORY/singularity-$PACKAGE-$VERSION.sif $TOOL "$@"
 
