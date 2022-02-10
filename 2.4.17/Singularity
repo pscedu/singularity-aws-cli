@@ -7,7 +7,7 @@ From: debian:latest
     SUPPORT help@psc.edu
     REPOSITORY http://gitub.com/pscedu/singularity-aws-cli
     COPYRIGHT Copyright © 2021-2022 Pittsburgh Supercomputing Center. All Rights Reserved.   
-    VERSION 2.2.16
+    VERSION 2.4.17
 
 %post
    apt update
