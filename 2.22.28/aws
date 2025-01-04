@@ -1,0 +1,18 @@
+#!/bin/bash
+
+VERSION=2.22.28
+PACKAGE=aws-cli
+TOOL=aws
+DIRECTORY=$(dirname $0)
+
+STORAGES=(/ocean /bil /hive /local)
+
+OPTIONS=""
+for STORAGE in "${STORAGES[@]}"
+do
+	if [ -d "$STORAGE" ]; then
+		OPTIONS=$OPTIONS" -B $STORAGE"
+	fi
+done
+
+singularity exec $OPTIONS $DIRECTORY/singularity-$PACKAGE-$VERSION.sif /usr/bin/$TOOL "$@"
