@@ -4,7 +4,7 @@ jobs:
 
   build:
     name: Build
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         singularity_version:
@@ -15,7 +15,7 @@ jobs:
     steps:
     - name: Check out code for the container build
       uses: actions/checkout@v1
-      
+
     - name: Install useful utilities
       run: apk update && apk add --no-cache tree figlet wget
 
